@@ -1,0 +1,58 @@
+{
+  "name": "simple-web",
+  "version": "1.0.0",
+  "description": "Simple web starter kit with Gulp, ES6, BrowserSync,etc... to kickstart your projects ",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AshikNesin/simple-web.git"
+  },
+  "keywords": [
+    "starter-kit",
+    "static",
+    "simple"
+  ],
+  "author": "Ashik Nesin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AshikNesin/simple-web/issues"
+  },
+  "homepage": "https://github.com/AshikNesin/simple-web#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.9.0",
+    "browser-sync": "^2.13.0",
+    "del": "^2.2.1",
+    "eslint": "^3.1.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-jsx-a11y": "^2.0.1",
+    "eslint-plugin-react": "^5.2.2",
+    "flightplan": "^0.6.14",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-cached": "^1.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-imagemin": "^3.0.2",
+    "gulp-jshint": "^2.0.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sass-lint": "^1.2.0",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.4",
+    "imagemin-pngquant": "^5.0.0",
+    "jshint": "^2.9.2"
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "^9.0.1"
+  }
+}
