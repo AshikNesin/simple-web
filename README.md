@@ -2,8 +2,6 @@ Simple Web Starter Kit
 ---
 A simple starter kit with SASS, autoprefixer, ES6 and minifcation to kickstart your projects in no time.
 
-
-What's set up here:
 ## Gulp Tasks
 Its heavily based on @una's [Gulp Starter Kit](https://github.com/una/gulp-starter-env).
 - Sass
@@ -23,8 +21,8 @@ To clone this repository
 `git clone --depth=1 https://github.com/AshikNesin/simple-web`
 
 ## TODO
-[x] Gulp with common tasks & BrowserSync
-[ ] Easy deployment
-[ ] CSS Coding Style Guide (Trello & Medium based)
-[ ] SASS organizing structure.
-[ ] ESLint (Gulp Task)
+- [x] Gulp with common tasks & BrowserSync
+- [ ] Easy deployment
+- [ ] CSS Coding Style Guide (Trello & Medium based)
+- [ ] SASS organizing structure.
+- [ ] ESLint (Gulp Task)
