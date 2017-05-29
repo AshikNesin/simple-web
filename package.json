@@ -4,6 +4,7 @@
   "description": "Simple web starter kit with Gulp, ES6, BrowserSync,etc... to kickstart your projects ",
   "main": "gulpfile.js",
   "scripts": {
+    "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -49,7 +50,7 @@
     "gulp-size": "^2.1.0",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.4",
-    "imagemin-pngquant": "^5.0.0",
+    "imagemin-pngquant": "^5.0.0"
   },
   "dependencies": {
     "eslint-config-airbnb": "^9.0.1"

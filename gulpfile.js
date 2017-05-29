@@ -36,7 +36,7 @@ gulp.task('scss', () => {
         this.emit('end');
     };
 
-    return gulp.src('app/assets/scss/main.scss')
+    return gulp.src('src/assets/scss/main.scss')
         .pipe(plumber({ errorHandler: onError }))
         .pipe(sass())
         .pipe(size({ gzip: true, showFiles: true }))
@@ -53,7 +53,7 @@ gulp.task('scss', () => {
 
 
 gulp.task('js', () => {
-    return gulp.src('app/assets/js/**/*.js')
+    return gulp.src('src/assets/js/**/*.js')
         .pipe(sourcemaps.init())
         .pipe(babel({
             presets: ['es2015']
@@ -68,7 +68,7 @@ gulp.task('js', () => {
 });
 
 gulp.task('scss-lint', () => {
-    return gulp.src('app/assets/scss/**/*.scss')
+    return gulp.src('src/assets/scss/**/*.scss')
         .pipe(cache('scsslint'))
         .pipe(scsslint());
 });
@@ -79,21 +79,21 @@ gulp.task('minify-html', () => {
         spare: true
     };
 
-    return gulp.src('app/*.html')
+    return gulp.src('src/*.html')
         .pipe(minifyHTML(opts))
         .pipe(gulp.dest('dist/'))
         .pipe(reload({ stream: true }));
 });
 
 gulp.task('eslint', () => {
-    return gulp.src(['app/assets/js/**/*.js', '!node_modules/**'])
+    return gulp.src(['src/assets/js/**/*.js', '!node_modules/**'])
         .pipe(eslint())
         .pipe(eslint.format())
         .pipe(eslint.failAfterError());
 });
 
 gulp.task('imgmin', () => {
-    return gulp.src('app/assets/img/*')
+    return gulp.src('src/assets/img/*')
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{ removeViewBox: false }],
@@ -115,10 +115,10 @@ gulp.task('deploy', () => {
 });
 
 gulp.task('watch', () => {
-    gulp.watch('app/assets/scss/**/*.scss', ['scss']);
-    gulp.watch('app/assets/js/*.js', ['js']);
-    gulp.watch('app/*.html', ['minify-html']);
-    gulp.watch('app/assets/img/*', ['imgmin']);
+    gulp.watch('src/assets/scss/**/*.scss', ['scss']);
+    gulp.watch('src/assets/js/*.js', ['js']);
+    gulp.watch('src/*.html', ['minify-html']);
+    gulp.watch('src/assets/img/*', ['imgmin']);
 });
 
 // gulp.task('build',() => {
